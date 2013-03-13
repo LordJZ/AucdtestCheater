@@ -1,0 +1,17 @@
+﻿<Window x:Class="AucdtestCheater.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AucdtestCheater" Height="340" Width="520" MinHeight="260" MinWidth="380">
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="160*"/>
+      <RowDefinition Height="26"/>
+      <RowDefinition Height="124*"/>
+    </Grid.RowDefinitions>
+    <TextBox Name="DataTextBox" Margin="10,41,10,10"  AcceptsReturn="True"/>
+    <Label Content="Data to hash:" Margin="10,10,10,0" VerticalAlignment="Top" Height="26"/>
+    <Label Content="Result:" Margin="10,0,10,0" VerticalAlignment="Top" Height="26" Grid.Row="1"/>
+    <Button Content="Hash" HorizontalAlignment="Right" Margin="0,0,10,0" Grid.Row="1" Width="90" Click="Button_Click"/>
+    <TextBox x:Name="ResultTextBox" Margin="10" Text="" Grid.Row="2" AcceptsReturn="True"/>
+  </Grid>
+</Window>
